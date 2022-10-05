@@ -1,0 +1,85 @@
+  notes on complete  reference of java:
+  
+  1) the History and Evolution of java:
+  To fully understand Java, one must understand the reasons behind its creation, the
+forces that shaped it, and the legacy that it inherits.
+
+ From C, Java derives its syntax. Many of Java’s
+object-oriented features were influenced by C++.
+
+ Moreover, the creation of
+Java was deeply rooted in the process of refinement and adaptation that has been occurring
+in computer programming languages for the past several decades.
+
+. As you probably know, when
+a computer language is designed, trade-offs are often made, such as the following:
+• Ease-of-use versus power
+• Safety versus efficiency
+• Rigidity versus extensibilit
+
+Although Java was designed as an interpreted language, there is nothing about Java that
+prevents on-the-fly compilation of bytecode into native code in order to boost performance.
+For this reason, Sun began supplying its HotSpot technology not long after Java’s initial
+release. HotSpot provides a Just-In-Time (JIT) compiler for bytecode. When a JIT compiler
+is part of the JVM, selected portions of bytecode are compiled into executable code in real
+time, on a piece-by-piece, demand basis. It is important to understand that it is not practical
+to compile an entire Java program into executable code all at once, because Java performs
+various run-time checks that can be done only at run time. Instead, a JIT compiler compiles
+code as it is needed, during execution. Furthermore, not all sequences of bytecode are
+compiled—only those that will benefit from compilation. The remaining code is simply
+interpreted. However, the just-in-time approach still yields a significant performance boost.
+Even when dynamic compilation is applied to bytecode, the portability and safety features
+still apply, because the JVM is still in charge of the execution environment
+
+
+Servlets: Java on the Server Side
+
+As useful as applets can be, they are just one half of the client/server equation. Not long
+after the initial release of Java, it became obvious that Java would also be useful on the
+server side. The result was the servlet. A servlet is a small program that executes on the
+server. Just as applets dynamically extend the functionality of a web browser, servlets
+dynamically extend the functionality of a web server. Thus, with the advent of the servlet,
+Java spanned both sides of the client/server connection.
+Servlets are used to create dynamically generated content that is then served to the
+client. For example, an online store might use a servlet to look up the price for an item in a
+database. The price information is then used to dynamically generate a web page that is sent
+to the browser. Although dynamically generated content is available through mechanisms such
+as CGI (Common Gateway Interface), the servlet offers several advantages, including
+increased performance.
+Because servlets (like all Java programs) are compiled into bytecode and executed
+by the JVM, they are highly portable. Thus, the same servlet can be used in a variety of
+different server environments. The only requirements are that the server support the JVM
+and a servlet container.
+
+The Java Buzzwords  :of Java are portability and security
+
+• Simple
+• Secure
+• Portable
+• Object-oriented
+• Robust
+• Multithreaded
+• Architecture-neutral
+• Interpreted
+• High performance
+• Distributed
+• Dynamic
+Two of these buzzwords have already been discussed: secure and portable. Let’s
+examine what each of the others implies
+
+A class defines
+the structure and behavior (data and code) that will be shared by a set of objects. Each object
+of a given class contains the structure and behavior defined by the class, as if it were stamped
+out by a mold in the shape of the class. For this reason, objects are sometimes referred to as
+instances of a class. Thus, a class is a logical construct; an object has physical reality.
+When you create a class, you will specify the code and data that constitute that class.
+Collectively, these elements are called members of the class. Specifically, the data defined by
+the class are referred to as member variables or instance variables. The code that operates on
+that data is referred to as member methods or just methods. (If you are familiar with C/C++, it
+may help to know that what a Java programmer calls a method, a C/C++ programmer calls a
+function.) In properly written Java programs, the methods define how the member variables
+can be used. This means that the behavior and interface of a class are defined by the methods
+that operate on its instance data.
+
+behavior= data = variables (member variables)
+interface = code = methods = functions (member 
