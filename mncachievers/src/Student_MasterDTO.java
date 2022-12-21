@@ -1,9 +1,9 @@
-package course;
+package student_master;
 
 public class Student_MasterDTO {
 	private int student_id;
 	private String student_name;
-	private int student_password;
+	private String student_password;
 	private int student_whatsappno1;
 	private int student_whatsappno2;
 	private int student_whatsappno3;
@@ -21,7 +21,7 @@ public class Student_MasterDTO {
 		
 	}
 
-	public Student_MasterDTO(int student_id, String student_name, int student_password, int student_whatsappno1,
+	public Student_MasterDTO(int student_id, String student_name, String student_password, int student_whatsappno1,
 			int student_whatsappno2, int student_whatsappno3, String student_email1, String student_email2,
 			String student_email3, String student_address1, String student_address2, String student_city,
 			String student_country, String student_college, String student_college_year) {
@@ -59,11 +59,11 @@ public class Student_MasterDTO {
 		this.student_name = student_name;
 	}
 
-	public int getStudent_password() {
+	public String getStudent_password() {
 		return student_password;
 	}
 
-	public void setStudent_password(int student_password) {
+	public void setStudent_password(String student_password) {
 		this.student_password = student_password;
 	}
 

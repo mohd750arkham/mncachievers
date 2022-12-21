@@ -1,1 +1,1 @@
-package student_course;
+package student_master;
