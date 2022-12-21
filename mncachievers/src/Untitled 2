@@ -1,0 +1,44 @@
+PROJECT - PANCHATANTHRA
+STUDENT TABLE
+create table student_master(
+student_id int(10),
+student_name varchar(90),
+student_password varchar(20),
+student_whatsappno1 int(10),
+student_whatsappno2 int(10),
+student_whatsappno3 int(10),
+student_email1 varchar(40),
+student_email2 varchar(40),
+student_email3 varchar(40),
+student_address1 varchar(100),
+student_address2 varchar(100),
+student_city varchar(50),
+student_country varchar(50),
+student_college varchar(100),
+student_college_year varchar(20)
+);
+create table student_course(
+student_id int(10),
+course_id int(10),
+fees_paid int(10),
+student_CJD date,
+student_CED date,
+student_CAttendance int(5),
+student_CGrade int(4)
+);
+create table course(
+course_id int(10),
+course_name varchar(100),
+duration_in_hrs int(10),
+course_level int(4),
+course_fees int(10)
+);
+create table panchatanthra(
+student_id int(10),
+course_id int(10),
+cod_count int(5),
+qod_count int(5),
+tod_count int(5),
+low_count int(5),
+vow_count int(5)
+);
