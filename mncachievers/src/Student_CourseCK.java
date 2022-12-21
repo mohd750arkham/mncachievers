@@ -1,4 +1,4 @@
-package panchatanthra;
+package student_course;
 
 import java.util.Objects;
 

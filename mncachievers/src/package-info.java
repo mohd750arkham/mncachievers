@@ -1,1 +1,1 @@
-package panchatanthra;
+package student_course;
